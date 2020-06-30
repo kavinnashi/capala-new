@@ -92,7 +92,7 @@ input[type=file] {
 .left-form .btn-green-cont {
     height: auto;
     width: 170px;
-    border: 2px solid #5ce3a1;
+    border: 2px solid #2e3844;
     float: left;
     padding: 8px 25px;
     color: #282828;
@@ -11864,3 +11864,16 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .context-dark .countdown-circle-bg, .bg-gray-800 .countdown-circle-bg, .bg-primary .countdown-circle-bg {
 	fill: rgba(255, 255, 255, 0.1);
 }
+.list-marked-primary{
+	color: #000000;
+	font-weight: 600;
+}
+.list-marked-primary>li::before {
+	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: #000000; /* Change the color */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1em; /* Also needed for space (tweak if needed) */
+	margin-left: -1em; /* Also needed for space (tweak if needed) */
+	left: 12px;
+  }
