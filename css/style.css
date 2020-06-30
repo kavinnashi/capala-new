@@ -11877,3 +11877,6 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	margin-left: -1em; /* Also needed for space (tweak if needed) */
 	left: 12px;
   }
+  .text-align-center{
+	text-align: center;
+  }
