@@ -2821,7 +2821,7 @@ hr {
 }
 
 .bg-primary .button-primary.button-ujarak::before {
-	background: #2e3844;
+	background: #48545c;
 }
 
 .button-secondary, .button-secondary:focus {
@@ -5388,7 +5388,7 @@ html [class*='section-'].section-bottom-0 {
 }
 
 .bg-primary {
-	background-color: #516ca9;
+	background-color: #2e3844;
 }
 
 .bg-primary:not([style*="background-"]) + .bg-primary:not([style*="background-"]) {
