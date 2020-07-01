@@ -207,7 +207,7 @@ html p a:hover {
 .context-dark h1,
 .bg-gray-800 h1,
 .bg-primary h1, .context-dark h2, .bg-gray-800 h2, .bg-primary h2, .context-dark h3, .bg-gray-800 h3, .bg-primary h3, .context-dark h4, .bg-gray-800 h4, .bg-primary h4, .context-dark h5, .bg-gray-800 h5, .bg-primary h5, .context-dark h6, .bg-gray-800 h6, .bg-primary h6, .context-dark [class^='heading-'], .bg-gray-800 [class^='heading-'], .bg-primary [class^='heading-'] {
-	color: #000000;
+	color: #ffffff;
 }
 
 /** @group Components */
@@ -5364,7 +5364,7 @@ html [class*='section-'].section-bottom-0 {
 	background-color: #ffffff;
 }
 .bg-default-about {
-	background-color: #edc7b7
+	background-color: #f5f1f7
 }
 
 .bg-default:not([style*="background-"]) + .bg-default:not([style*="background-"]) {
