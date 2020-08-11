@@ -64,7 +64,9 @@
   </style>
   <script >
     function myFunction(val) {
-      $(".right-form").hide()
+      $(".right-form").hide();
+      $(".application-form").css("background-color", "white")
+      $(event.target).css("background-color", "#e9ecef")
       var x = document.getElementById(val);
       if (x.style.display === "none") {
         x.style.display = "block";
