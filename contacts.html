@@ -1,153 +1,395 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <title>Contacts</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href = "fonts/stylesheet.css" rel = "stylesheet" type = "text/css" />
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet/less" href="css/form.less">
-    
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
-    .rd-navbar-static-linked .rd-navbar-bg{
+
+<head>
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet/less" href="css/form.less">
+
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+
+    .rd-navbar-static-linked .rd-navbar-bg {
       height: 100px;
     }
-    </style>
-  </head>
-  <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-      <div class="preloader-body">
-        <div class="loader">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <p>Loading...</p>
+  </style>
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
+      <p>Loading...</p>
     </div>
-    <div class="page">
-      <header class="section page-header rd-navbar-transparent-wrap">
-        <!--RD Navbar-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-transparent" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="44px" data-xl-stick-up-offset="44px" data-xxl-stick-up-offset="44px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-           
-           
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main-inner">
-                <div class="rd-navbar-main">
-                  <!--RD Navbar Panel-->
-                  <div class="rd-navbar-panel">
-                    <!--RD Navbar Toggle-->
-                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                    <!--RD Navbar Brand-->
-                    <div class="rd-navbar-brand">
-                      <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-inverse.png" alt="" width="146" height="22"/><img class="brand-logo-light" src="images/logo.png" alt="" width="155" height="22"/></a>
-                    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header rd-navbar-transparent-wrap">
+      <!--RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-transparent" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="44px" data-xl-stick-up-offset="44px"
+          data-xxl-stick-up-offset="44px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+
+
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main-inner">
+              <div class="rd-navbar-main">
+                <!--RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!--RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!--RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark"
+                        src="images/logo-inverse.png" alt="" width="146" height="22" /><img class="brand-logo-light"
+                        src="images/logo.png" alt="" width="155" height="22" /></a>
                   </div>
-                  <div class="rd-navbar-main-element">
-                    <div class="rd-navbar-nav-wrap">
-                      <ul class="rd-navbar-nav">
-                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
-                        </li>
-                        <!--<li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
+                      </li>
+                      <!--<li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
                         </li>-->
-                        <li class="rd-nav-item active"><a class="rd-nav-link" href="contacts.html">Contact Us</a>
-                        </li>
-                      </ul>
-                    </div>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="contacts.html">Contact Us</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-          </nav>
-        </div>
-        <div class="rd-navbar-bg novi-background bg-image" style="background-image: url(images/bg-navbar.jpg)"></div>
-      </header>
-      <!-- Breadcrumbs-->
-      <section class="breadcrumbs-custom bg-image novi-background bg-primary">
-        <div class="container">
-          <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Contact Us</li>
-          </ul>
-        </div>
-      </section>
-      <!-- Contacts-->
-      <section class="section section-md">
-        <div class="container">
-          <h2>Contacts</h2>
-          <div class="row row-40">
-            <div class="col-md-10 col-lg-6">
-              <h5>Our Presence</h5>
-              <div class="group-item">
-                <div class="icon icon-sm icon-primary novi-icon mdi mdi-email"></div> <a class="d-inline-block font-weight-bold big link-underline" href="mailto:contact@capalaventures.com">contact@capalaventures.com</a>
-              </div>
-              <figure class="figure-light"><img class="img-centered" src="images/mapwithmark.png" alt="" width="544" height="171"/>
-              </figure>
-             
-            
+          </div>
+        </nav>
+      </div>
+      <div class="rd-navbar-bg novi-background bg-image" style="background-image: url(images/bg-navbar.jpg)"></div>
+    </header>
+    <!-- Breadcrumbs-->
+    <section class="breadcrumbs-custom bg-image novi-background bg-primary">
+      <div class="container">
+        <ul class="breadcrumbs-custom-path">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Contact Us</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Contacts-->
+    <section class="section section-md">
+      <div class="container">
+        <h2>Contacts</h2>
+        <div class="row row-40">
+          <div class="col-md-10 col-lg-6">
+            <h5>Our Presence</h5>
+            <div class="group-item">
+              <div class="icon icon-sm icon-primary novi-icon mdi mdi-email"></div> <a
+                class="d-inline-block font-weight-bold big link-underline"
+                href="mailto:contact@capalaventures.com">contact@capalaventures.com</a>
             </div>
-            <div class="col-md-10 col-lg-6">
-            
-              <!--RD Mailform-->
-              <div  class="col-md-12 col-sm-12 hidden-xs col-xs-12 white-bg left-form" id="tab-container" >
-                <h1 >Share Your Business Plan</h1>
-                <form  method="post" action="bat/test-mailform.php" class=" rd-form rd-mailform">
-                  <div  class="form-group">
-                    <label >Name</label>
-                    <input  class="form-control  " name="contact_name" placeholder="Name" type="text">
-                    </div>
-            
-                    <div  class="form-group">
-                        <label >Company Name</label>
-                      <input  class="form-control  " name="company_name" placeholder="Company name" type="text">
-                    </div>
-            
-                    <div  class="form-group">
-                        <label >What are you building?</label>
-                      <textarea  name="about" placeholder="Company brief" style="width:100%; height:200px;" class=" "></textarea>
-                    </div>
-            
-                    <div  class="form-group">
-                      <label >File attachment</label>
-                      <input  class="form-control  " name="presentation" type="file">
-                    </div>
-                    
-                    <div  class="form-group">                    
-                        <label >Email id</label>
-                      <input  class="form-control  " name="contact_email" placeholder="Contact email" type="email">
-                    </div>
-            
-                    <div  class="form-group">
-                        <label >Mobile number</label>
-                        <input  class="form-control  " name="contact_number" placeholder="Contact number" type="text">
-                    </div>    
-                    
-                    <div  class="text-right" style="margin-top:30px;">
-                        <input  class="btn-green-cont" name="submit" type="submit" value="SUBMIT">
-                    </div>
-                    <div  class="clearfix"></div>
-                    <!---->
-                    <div  class="text-left" style="margin-top:30px;">
-                      
-                    </div>
-                  </form>
-              </div>
-              <!-- <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+            <figure class="figure-light"><img class="img-centered" src="images/mapwithmark.png" alt="" width="544"
+                height="171" />
+            </figure>
+
+
+          </div>
+          <div class="col-md-10 col-lg-6">
+
+            <!--RD Mailform-->
+            <div class="col-md-12 col-sm-12 hidden-xs col-xs-12 white-bg left-form" id="tab-container">
+              <h1>Startup signup form</h1>
+              <form method="post" action="bat/test-mailform.php" class=" rd-form rd-mailform">
+                <div class="form-group">
+                  <label>Start Up Name</label>
+                  <input class="form-control  " name="contact_name" placeholder="Start Up Name" type="text">
+                </div>
+
+
+                <div class="form-group">
+                  <label>Description of the solution</label>
+                  <textarea name="about" placeholder="Description of the solution" style="width:100%; height:200px;"
+                    class=" "></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>One Line Tagline</label>
+                  <input class="form-control  " name="company_name" placeholder="One Line Tagline" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Video Pitch of the startup</label>
+                  <input class="form-control  " name="presentation" type="file">
+                </div>
+                <div class="form-group">
+                  <label>Product demo video</label>
+                  <input class="form-control  " name="presentation" type="file">
+                </div>
+                <div class="form-group">
+                  <label>Logo of the Startup</label>
+                  <input class="form-control  " name="presentation" type="file">
+                </div>
+                <div class="form-group">
+                  <label>Product Image</label>
+                  <input class="form-control  " name="presentation" type="file">
+                </div>
+                <div class="form-group">
+                  <label>Pitch deck</label>
+                  <input class="form-control  " name="presentation" type="file">
+                </div>
+                <div class="form-group">
+                  <label>Sector</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <h4>About Founder</h4>
+                <div class="form-group">
+                  <label>Name of the Founder</label>
+                  <input class="form-control  " name="contact_name" placeholder="Name of the Founder" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Linkedin Page link</label>
+                  <input class="form-control  " name="contact_name" placeholder="Linkedin Page link" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Age group</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <div class="form-group">
+                  <label>Gender</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+
+                <div class="form-group">
+                  <label>Email id</label>
+                  <input class="form-control  " name="contact_email" placeholder="Email id" type="email">
+                </div>
+
+
+                <div class="form-group">
+                  <label>Mobile number</label>
+                  <input class="form-control  " name="contact_number" placeholder="Mobile number" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label>Years of experience</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+
+                <div class="form-group">
+                  <label>Qualification</label>
+                  <input class="form-control  " name="contact_name" placeholder="Qualification" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label>Experience</label>
+                  <input class="form-control  " name="contact_name" placeholder="Experience" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label>Founder</label>
+                  <input class="form-control  " name="contact_name" placeholder="Founder" type="text">
+                </div>
+                <h4>About startup</h4>
+                <div class="form-group">
+                  <label>What is the current stage of the startup</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <div class="form-group">
+                  <label>When was the startup founded</label>
+                  <input class="form-control  " name="contact_name" placeholder="When was the startup founded" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Employee strength</label>
+                  <input class="form-control  " name="contact_name" placeholder="Employee strength" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Have you been part of accelerator/ incubator program</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <div class="form-group">
+                  <label>Name of accelerator</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <div class="form-group">
+                  <label>Accelerator web link</label>
+                  <input class="form-control  " name="contact_name" placeholder="Accelerator web link" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Last invsetment value</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <div class="form-group">
+                  <label>Last investment by</label>
+                  <input class="form-control  " name="contact_name" placeholder="Last investment by" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Date of last investment</label>
+                  <input class="form-control  " name="contact_name" placeholder="Date of last investment" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Name of Investing firm</label>
+                  <input class="form-control  " name="contact_name" placeholder="Name of Investing firm" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Current stage of investment</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <div class="form-group">
+                  <label>How much do you intend to raise now</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <h4>Startup Links</h4>
+                <div class="form-group">
+                  <label>Website ID</label>
+                  <input class="form-control  " name="contact_name" placeholder="Website ID" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Linkedin</label>
+                  <input class="form-control  " name="contact_name" placeholder="Linkedin" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Facebook</label>
+                  <input class="form-control  " name="contact_name" placeholder="Facebook" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Twitter</label>
+                  <input class="form-control  " name="contact_name" placeholder="Twitter" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Instagram</label>
+                  <input class="form-control  " name="contact_name" placeholder="Instagram" type="text">
+                </div>
+
+
+                <div class="text-right" style="margin-top:30px;">
+                  <input class="btn-green-cont" name="submit" type="submit" value="SUBMIT">
+                </div>
+
+                <div class="clearfix"></div>
+                <!---->
+                <div class="text-left" style="margin-top:30px;">
+
+                </div>
+              </form>
+              <h1>Investor form</h1>
+              <form method="post" action="bat/test-mailform.php" class=" rd-form rd-mailform">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input class="form-control  " name="contact_name" placeholder="First Name" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Last name</label>
+                  <input class="form-control  " name="contact_name" placeholder="Last name" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Company Name</label>
+                  <input class="form-control  " name="contact_name" placeholder="Company Name" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Job title</label>
+                  <input class="form-control  " name="contact_name" placeholder="Job title" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Investor type</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+               
+
+
+                <div class="form-group">
+                  <label>Mobile number</label>
+                  <input class="form-control  " name="contact_number" placeholder="Investor number" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Email id</label>
+                  <input class="form-control  " name="contact_email" placeholder="Investor email" type="email">
+                </div>
+
+
+                <div class="form-group">
+                  <label>Website</label>
+                  <input class="form-control  " name="contact_name" placeholder="Website" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label>City</label>
+                  <input class="form-control  " name="contact_name" placeholder="City" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label>Pincode</label>
+                  <input class="form-control  " name="contact_name" placeholder="Pincode" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label>Linkedin Id</label>
+                  <input class="form-control  " name="contact_name" placeholder="Linkedin Id" type="text">
+                </div>
+                <h4>Preferences</h4>
+                <div class="form-group">
+                  <label>Funding Stage</label>
+                  <select class="form-control  " name="contact_name" placeholder="Funding Stage" type="text"></select>
+                </div>
+                <div class="form-group">
+                  <label>Founded Year</label>
+                  <input class="form-control  " name="contact_name" placeholder="Founded Year" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Country</label>
+                  <input class="form-control  " name="contact_name" placeholder="Country" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Product Stage</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <div class="form-group">
+                  <label>Sector</label>
+                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
+                </div>
+                <div class="text-right" style="margin-top:30px;">
+                  <input class="btn-green-cont" name="submit" type="submit" value="SUBMIT">
+                </div>
+
+                <div class="clearfix"></div>
+                </form>
+            </div>
+            <!-- <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                 <div class="row row-10">
                   <div class="col-md-6">
                     <div class="form-wrap">
@@ -181,11 +423,12 @@
             </div> -->
           </div>
         </div>
-      </section>
-      
-    </div>
-    <div class="snackbars" id="form-output-global"></div>
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+    </section>
+
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
