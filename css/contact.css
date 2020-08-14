@@ -1,0 +1,102 @@
+/* The Modal (background) */
+.modal {
+  display: none;
+ /* Hidden by default */
+  position: fixed;
+ /* Stay in place */
+  z-index: 1;
+ /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+ /* Full width */
+  height: 100%;
+ /* Full height */
+  overflow: auto;
+ /* Enable scroll if needed */
+  background-color: #000;
+ /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+ /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+ /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+ /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Style the form */
+#regForm {
+  background-color: #fff;
+  margin: 10px auto;
+  width: 70%;
+  min-width: 300px;
+ /* Style the input fields */
+ /* Mark input boxes that gets an error on validation: */
+ /* Hide all steps by default: */
+ /* Make circles that indicate the steps of the form: */
+ /* Mark the active step: */
+ /* Mark the steps that are finished and valid: */
+}
+#regForm input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaa;
+}
+#regForm input::placeholder{display: block;}
+#regForm input.invalid {
+  background-color: #fdd;
+}
+#regForm .tab {
+  display: none;
+  margin-bottom: 15px;
+}
+#regForm button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+#regForm button:hover {
+  opacity: 0.8;
+}
+#regForm #prevBtn {
+  background-color: #bbb;
+}
+#regForm .step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+#regForm .step.active {
+  opacity: 1;
+}
+#regForm .step.finish {
+  background-color: #4caf50;
+}

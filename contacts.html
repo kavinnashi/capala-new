@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet/less" href="css/form.less">
-
+  <link rel="stylesheet" href="css/contact.css">
   <style>
     .ie-panel {
       display: none;
@@ -34,35 +34,45 @@
     .rd-navbar-static-linked .rd-navbar-bg {
       height: 100px;
     }
+
     .left-form .btn-green-cont {
       cursor: pointer;
     }
-    .application-form{
+
+    .application-form {
       user-select: none;
-    white-space: pre;
-    
-    text-align: center;
-    cursor: pointer;
-    height: auto;
-    width: 170px;
-    border: 2px solid #2e3844;
-    float: left;
-    padding: 8px 25px;
-    color: #282828;
-    background: #fff;
-    
+      white-space: pre;
+
+      text-align: center;
+      cursor: pointer;
+      height: auto;
+      width: 170px;
+      border: 2px solid #2e3844;
+      float: left;
+      padding: 8px 25px;
+      color: #282828;
+      background: #fff;
+
 
     }
-    .application-form-wrapper{
+
+    .application-form-wrapper {
       display: flex;
       justify-content: space-between;
     }
-    .investor-form,.startup-form{
+
+    .investor-form,
+    .startup-form {
       display: none;
-   
+
+    }
+
+    .rd-navbar-transparent.rd-navbar-static .rd-navbar-main-inner {
+      background-color: transparent;
     }
   </style>
-  <script >
+
+  <script>
     function myFunction(val) {
       $(".right-form").hide();
       $(".application-form").css("background-color", "white")
@@ -154,372 +164,262 @@
       </div>
     </section>
     <!-- Contacts-->
+
     <section class="section section-md">
       <div class="container">
         <h2>Contacts</h2>
         <div class="row row-40">
+
+
           <div class="col-md-10 col-lg-6">
-            <h5>Our Presence</h5>
-            <div class="group-item">
-              <div class="icon icon-sm icon-primary novi-icon mdi mdi-email"></div> <a
-                class="d-inline-block font-weight-bold big link-underline"
-                href="mailto:contact@capalaventures.com">contact@capalaventures.com</a>
-            </div>
-            <figure class="figure-light"><img class="img-centered" src="images/mapwithmark.png" alt="" width="544"
-                height="171" />
-            </figure>
             <h5>Application Form</h5>
             <div class="text-left application-form-wrapper" style="margin-top:30px;">
-              <input class="btn-green-cont application-form" type="submit" name="submit" onclick="myFunction('startup-form')" value="Startup form">
-              <input class="btn-green-cont application-form" type="submit" name="submit" onclick="myFunction('investor-form')" value="Investor form">
+              <input class="btn-green-cont application-form" id="startupBtn" type="submit" name="submit"
+                onclick="myFunction('startup-form')" value="Startup form">
+              <input class="btn-green-cont application-form" id="investorBtn" type="submit" name="submit"
+                onclick="myFunction('investor-form')" value="Investor form">
             </div>
             <div class="clearfix"></div>
-            <div class="col-md-12 col-sm-12 hidden-xs col-xs-12 white-bg left-form right-form startup-form" id="startup-form">
-              <h1>Startup signup form</h1>
-              <form method="post" action="bat/test-mailform.php" class=" rd-form rd-mailform">
-                <div class="form-group">
-                  <label>Start Up Name</label>
-                  <input class="form-control  " name="contact_name" placeholder="Start Up Name" type="text">
-                </div>
 
 
-                <div class="form-group">
-                  <label>Description of the solution</label>
-                  <textarea name="about" placeholder="Description of the solution" style="width:100%; height:200px;"
-                    class=" "></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label>One Line Tagline</label>
-                  <input class="form-control  " name="company_name" placeholder="One Line Tagline" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Video Pitch of the startup</label>
-                  <input class="form-control  " name="presentation" type="file">
-                </div>
-                <div class="form-group">
-                  <label>Product demo video</label>
-                  <input class="form-control  " name="presentation" type="file">
-                </div>
-                <div class="form-group">
-                  <label>Logo of the Startup</label>
-                  <input class="form-control  " name="presentation" type="file">
-                </div>
-                <div class="form-group">
-                  <label>Product Image</label>
-                  <input class="form-control  " name="presentation" type="file">
-                </div>
-                <div class="form-group">
-                  <label>Pitch deck</label>
-                  <input class="form-control  " name="presentation" type="file">
-                </div>
-                <div class="form-group">
-                  <label>Sector</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-                <h4>About Founder</h4>
-                <div class="form-group">
-                  <label>Name of the Founder</label>
-                  <input class="form-control  " name="contact_name" placeholder="Name of the Founder" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Linkedin Page link</label>
-                  <input class="form-control  " name="contact_name" placeholder="Linkedin Page link" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Age group</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-                <div class="form-group">
-                  <label>Gender</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-
-                <div class="form-group">
-                  <label>Email id</label>
-                  <input class="form-control  " name="contact_email" placeholder="Email id" type="email">
-                </div>
-
-
-                <div class="form-group">
-                  <label>Mobile number</label>
-                  <input class="form-control  " name="contact_number" placeholder="Mobile number" type="text">
-                </div>
-
-                <div class="form-group">
-                  <label>Years of experience</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-
-                <div class="form-group">
-                  <label>Qualification</label>
-                  <input class="form-control  " name="contact_name" placeholder="Qualification" type="text">
-                </div>
-
-                <div class="form-group">
-                  <label>Experience</label>
-                  <input class="form-control  " name="contact_name" placeholder="Experience" type="text">
-                </div>
-
-                <div class="form-group">
-                  <label>Founder</label>
-                  <input class="form-control  " name="contact_name" placeholder="Founder" type="text">
-                </div>
-                <h4>About startup</h4>
-                <div class="form-group">
-                  <label>What is the current stage of the startup</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-                <div class="form-group">
-                  <label>When was the startup founded</label>
-                  <input class="form-control  " name="contact_name" placeholder="When was the startup founded" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Employee strength</label>
-                  <input class="form-control  " name="contact_name" placeholder="Employee strength" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Have you been part of accelerator/ incubator program</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-                <div class="form-group">
-                  <label>Name of accelerator</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-                <div class="form-group">
-                  <label>Accelerator web link</label>
-                  <input class="form-control  " name="contact_name" placeholder="Accelerator web link" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Last invsetment value</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-                <div class="form-group">
-                  <label>Last investment by</label>
-                  <input class="form-control  " name="contact_name" placeholder="Last investment by" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Date of last investment</label>
-                  <input class="form-control  " name="contact_name" placeholder="Date of last investment" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Name of Investing firm</label>
-                  <input class="form-control  " name="contact_name" placeholder="Name of Investing firm" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Current stage of investment</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-                <div class="form-group">
-                  <label>How much do you intend to raise now</label>
-                  <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                </div>
-                <h4>Startup Links</h4>
-                <div class="form-group">
-                  <label>Website ID</label>
-                  <input class="form-control  " name="contact_name" placeholder="Website ID" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Linkedin</label>
-                  <input class="form-control  " name="contact_name" placeholder="Linkedin" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Facebook</label>
-                  <input class="form-control  " name="contact_name" placeholder="Facebook" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Twitter</label>
-                  <input class="form-control  " name="contact_name" placeholder="Twitter" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Instagram</label>
-                  <input class="form-control  " name="contact_name" placeholder="Instagram" type="text">
-                </div>
-
-
-                <div class="text-right" style="margin-top:30px;">
-                  <input class="btn-green-cont" name="submit" type="submit" value="SUBMIT">
-                </div>
-
-                <div class="clearfix"></div>
-                <!---->
-                <div class="text-left" style="margin-top:30px;">
-
-                </div>
-              </form>
-              </div>
-              <div class="col-md-12 col-sm-12 hidden-xs col-xs-12 white-bg left-form right-form investor-form" id="investor-form">
-            
-                <h1>Investor form</h1>
-                <form method="post" action="bat/test-mailform.php" class=" rd-form rd-mailform">
-                  <div class="form-group">
-                    <label>First Name</label>
-                    <input class="form-control  " name="contact_name" placeholder="First Name" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label>Last name</label>
-                    <input class="form-control  " name="contact_name" placeholder="Last name" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label>Company Name</label>
-                    <input class="form-control  " name="contact_name" placeholder="Company Name" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label>Job title</label>
-                    <input class="form-control  " name="contact_name" placeholder="Job title" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label>Investor type</label>
-                    <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                  </div>
-                 
-  
-  
-                  <div class="form-group">
-                    <label>Mobile number</label>
-                    <input class="form-control  " name="contact_number" placeholder="Investor number" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label>Email id</label>
-                    <input class="form-control  " name="contact_email" placeholder="Investor email" type="email">
-                  </div>
-  
-  
-                  <div class="form-group">
-                    <label>Website</label>
-                    <input class="form-control  " name="contact_name" placeholder="Website" type="text">
-                  </div>
-  
-                  <div class="form-group">
-                    <label>City</label>
-                    <input class="form-control  " name="contact_name" placeholder="City" type="text">
-                  </div>
-  
-                  <div class="form-group">
-                    <label>Pincode</label>
-                    <input class="form-control  " name="contact_name" placeholder="Pincode" type="text">
-                  </div>
-  
-                  <div class="form-group">
-                    <label>Linkedin Id</label>
-                    <input class="form-control  " name="contact_name" placeholder="Linkedin Id" type="text">
-                  </div>
-                  <h4>Preferences</h4>
-                  <div class="form-group">
-                    <label>Funding Stage</label>
-                    <select class="form-control  " name="contact_name" placeholder="Funding Stage" type="text"></select>
-                  </div>
-                  <div class="form-group">
-                    <label>Founded Year</label>
-                    <input class="form-control  " name="contact_name" placeholder="Founded Year" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label>Country</label>
-                    <input class="form-control  " name="contact_name" placeholder="Country" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label>Product Stage</label>
-                    <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                  </div>
-                  <div class="form-group">
-                    <label>Sector</label>
-                    <select class="form-control  " name="contact_name" placeholder="Name" type="text"></select>
-                  </div>
-                  <div class="text-right" style="margin-top:30px;">
-                    <input class="btn-green-cont" name="submit" type="submit" value="SUBMIT">
-                  </div>
-  
-                  <div class="clearfix"></div>
-                  </form>
-              </div>
-          </div>
-          <div class="col-md-10 col-lg-6">
-            <div  class="col-md-12 col-sm-12 hidden-xs col-xs-12 white-bg left-form" id="tab-container" >
-              <h1 >Share Your Business Plan</h1>
-              <form  method="post" action="bat/test-mailform.php" class=" rd-form rd-mailform">
-                <div  class="form-group">
-                  <label >Name</label>
-                  <input  class="form-control  " name="contact_name" placeholder="Name" type="text">
-                  </div>
-          
-                  <div  class="form-group">
-                      <label >Company Name</label>
-                    <input  class="form-control  " name="company_name" placeholder="Company name" type="text">
-                  </div>
-          
-                  <div  class="form-group">
-                      <label >What are you building?</label>
-                    <textarea  name="about" placeholder="Company brief" style="width:100%; height:200px;" class=" "></textarea>
-                  </div>
-          
-                  <div  class="form-group">
-                    <label >File attachment</label>
-                    <input  class="form-control  " name="presentation" type="file">
-                  </div>
-                  
-                  <div  class="form-group">                    
-                      <label >Email id</label>
-                    <input  class="form-control  " name="contact_email" placeholder="Contact email" type="email">
-                  </div>
-          
-                  <div  class="form-group">
-                      <label >Mobile number</label>
-                      <input  class="form-control  " name="contact_number" placeholder="Contact number" type="text">
-                  </div>    
-                  
-                  <div  class="text-right" style="margin-top:30px;">
-                      <input  class="btn-green-cont" name="submit" type="submit" value="SUBMIT">
-                  </div>
-                  <div  class="clearfix"></div>
-                  <!---->
-                  <div  class="text-left" style="margin-top:30px;">
-                    
-                  </div>
-                </form>
-            </div>
-            <!--RD Mailform-->
-
-              
-            <!-- <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                <div class="row row-10">
-                  <div class="col-md-6">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-first-name">First Name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-last-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-last-name">Last Name</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-wrap">
-                      <label class="form-label" for="contact-message">Message</label>
-                      <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-md-7 col-xl-8">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                      <label class="form-label" for="contact-email">E-mail</label>
-                    </div>
-                  </div>
-                  <div class="col-md-5 col-xl-4">
-                    <button class="button button-size-1 button-block button-primary" type="submit">Send</button>
-                  </div>
-                </div>
-              </form>
-            </div> -->
           </div>
         </div>
     </section>
 
   </div>
+  <div id="startup" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="regForm" method="post" action="bat/contact-form.php" enctype="multipart/form-data">
+
+        <h1>Startup signup form:</h1>
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">Start up info:
+          <div class="form-group">
+            <label>Start Up Name</label>
+            <input class="form-control  " name="startup_name" placeholder="Start Up Name" type="text">
+          </div>
+
+
+          <div class="form-group">
+            <label>Description of the solution</label>
+            <textarea name="description_of_solution" placeholder="Description of the solution"
+              style="width:100%; height:200px;" class=" "></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>One Line Tagline</label>
+            <input class="form-control  " name="_tagline" placeholder="One Line Tagline" type="text">
+          </div>
+          <div class="form-group">
+            <label>Video Pitch of the startup</label>
+            <input class="form-control  " name="video_pitch" type="file">
+          </div>
+          <div class="form-group">
+            <label>Product demo video</label>
+            <input class="form-control  " name="product_demo" type="file">
+          </div>
+          <div class="form-group">
+            <label>Logo of the Startup</label>
+            <input class="form-control  " name="logo" type="file">
+          </div>
+          <div class="form-group">
+            <label>Product Image</label>
+            <input class="form-control  " name="prod_image" type="file">
+          </div>
+          <div class="form-group">
+            <label>Pitch deck</label>
+            <input class="form-control  " name="pitch_deck" type="file">
+          </div>
+          <div class="form-group">
+            <label>Sector</label>
+            <select class="form-control  " name="sector" placeholder="Name" type="text">
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="tab">About Founder:
+          <div class="form-group">
+            <label>Name of the Founder</label>
+            <input class="form-control  " name="founder" placeholder="Name of the Founder" type="text">
+          </div>
+          <div class="form-group">
+            <label>Linkedin Page link</label>
+            <input class="form-control  " name="linked_in_link" placeholder="Linkedin Page link" type="text">
+          </div>
+          <div class="form-group">
+            <label>Age group</label>
+            <select class="form-control  " name="age" placeholder="Name" >
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Gender</label>
+            <select class="form-control  " name="gender" placeholder="Name" >
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Email id</label>
+            <input class="form-control  " name="contact_email" placeholder="Email id" type="email">
+          </div>
+
+
+          <div class="form-group">
+            <label>Mobile number</label>
+            <input class="form-control  " name="contact_number" placeholder="Mobile number" type="text">
+          </div>
+
+          <div class="form-group">
+            <label>Years of experience</label>
+            <select class="form-control  " name="experience" placeholder="Name" >
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Qualification</label>
+            <input class="form-control  " name="qualification" placeholder="Qualification" type="text">
+          </div>
+
+
+        </div>
+
+        <div class="tab">About startup:
+          <div class="form-group">
+            <label>What is the current stage of the startup</label>
+            <select class="form-control  " name="current_stage" placeholder="Name" >
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>When was the startup founded</label>
+            <input class="form-control  " name="startup_date" placeholder="When was the startup founded" type="text">
+          </div>
+          <div class="form-group">
+            <label>Employee strength</label>
+            <input class="form-control  " name="emp_strength" placeholder="Employee strength" type="text">
+          </div>
+          <div class="form-group">
+            <label>Have you been part of accelerator/ incubator program</label>
+            <select class="form-control  " name="program" placeholder="Name" >
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Name of accelerator</label>
+            <select class="form-control  " name="accelerator" placeholder="Name" >
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Accelerator web link</label>
+            <input class="form-control  " name="accelerator_link" placeholder="Accelerator web link" type="text">
+          </div>
+          <div class="form-group">
+            <label>Last invsetment value</label>
+            <select class="form-control  " name="last_investment" placeholder="Name">
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Last investment by</label>
+            <input class="form-control  " name="last_investment_by" placeholder="Last investment by" type="text">
+          </div>
+          <div class="form-group">
+            <label>Date of last investment</label>
+            <input class="form-control  " name="last_investment_date" placeholder="Date of last investment" type="text">
+          </div>
+          <div class="form-group">
+            <label>Name of Investing firm</label>
+            <input class="form-control  " name="investment_firm" placeholder="Name of Investing firm" type="text">
+          </div>
+          <div class="form-group">
+            <label>Current stage of investment</label>
+            <select class="form-control  " name="investment_stage" placeholder="Name" >
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>How much do you intend to raise now</label>
+            <select class="form-control  " name="fund_raise" placeholder="Name" >
+              <option value="first">First</option>
+              <option value="second">Second</option>
+              <option value="third">Third</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="tab">Startup Links:
+          <div class="form-group">
+            <label>Website ID</label>
+            <input class="form-control  " name="website_link" placeholder="Website ID" type="text">
+          </div>
+          <div class="form-group">
+            <label>Linkedin</label>
+            <input class="form-control  " name="linkedin_link" placeholder="Linkedin" type="text">
+          </div>
+          <div class="form-group">
+            <label>Facebook</label>
+            <input class="form-control  " name="fb_link" placeholder="Facebook" type="text">
+          </div>
+          <div class="form-group">
+            <label>Twitter</label>
+            <input class="form-control  " name="twitter_link" placeholder="Twitter" type="text">
+          </div>
+          <div class="form-group">
+            <label>Instagram</label>
+            <input class="form-control  " name="insta_link" placeholder="Instagram" type="text">
+          </div>
+        </div>
+
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/contact-js.js"></script>
 </body>
 
 </html>
