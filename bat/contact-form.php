@@ -78,7 +78,7 @@ if (isset($name)&& !empty($name)) {
     }
     
     
-    else if (($fileextension == "mp4") || ($fileextension == "ogg") || ($fileextension == "webm")|| ($fileextension == "png"))
+    else if (($fileextension == "mp4")  || ($fileextension == "ogg") || ($fileextension == "webm")|| ($fileextension == "png"))
     {
     if (move_uploaded_file($tmp_name, $path.$name)) {
     echo 'Uploaded!';
