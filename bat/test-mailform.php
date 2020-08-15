@@ -19,7 +19,7 @@ if (isset($_FILES) && (bool) $_FILES) {
     // email fields: to, from, subject, and so on
     $to = "kavinnashi@gmail.com";
     $from = $_POST['contact_email'];
-    $subject = $_POST['Company_brief'];
+    $subject = $_POST['about'];
     $message = $_POST['contact_name'];
     $headers = "From: $from";
 
@@ -49,10 +49,12 @@ if (isset($_FILES) && (bool) $_FILES) {
     // send
 
     $ok = mail($to, $subject, $message, $headers);
+	
     if ($ok) {
         echo "<p>mail sent to $to!</p>";
     } else {
         echo "<p>mail could not be sent!</p>";
     }
+	ini_set('display_errors',1);
 }
 ?>

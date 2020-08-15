@@ -43,8 +43,8 @@ $insta_link=$_POST['insta_link'];
 
 $query = "
 INSERT INTO uploadStartUpform
-(instaLink, twitterLink, fbLink, websiteLink, fundRaise, investmentStage, investmentFirm,lastInvestmentDate,lastInvestmentBy,last_investment,accelerator_link,accelerator,program,emp_strength,startup_date,current_stage,qualification,experience,contact_number,contact_email,gender,age,linked_in_link,founder,sector,_tagline,description_of_solution,startup_name) VALUES
-('$insta_link', '$twitter_link', '$fb_link', '$website_link', '$fund_raise', '$investment_stage', '$investment_firm', '$last_investment_date', '$last_investment_date', '$last_investment_date', '$last_investment_by', '$last_investment', '$accelerator_link', '$accelerator', '$last_investment_date', '$program', '$emp_strength', '$startup_date', '$current_stage', '$qualification', '$experience', '$contact_number', '$contact_email', '$gender', '$age', '$linked_in_link', '$founder', '$sector', '$_tagline', '$description_of_solution', '$startup_name');";
+(instaLink, twitterLink, fbLink, websiteLink, fundRaise, investmentStage, investmentFirm,lastInvestmentDate,lastInvestmentBy,lastInvestment,acceleratorLink,accelerator,program,empStrength,startupDate,currentStage,qualification,experience,contactNumber,contactEmail,gender,age,linkedInLink,founder,sector,tagline,descriptionOfSolution,startupName) VALUES
+('$insta_link', '$twitter_link', '$fb_link', '$website_link', '$fund_raise', '$investment_stage', '$investment_firm', '$last_investment_date','$last_investment_by', '$last_investment', '$accelerator_link', '$accelerator', '$program', '$emp_strength', '$startup_date', '$current_stage', '$qualification', '$experience', '$contact_number', '$contact_email', '$gender', '$age', '$linked_in_link', '$founder', '$sector', '$tagline', '$description_of_solution', '$startup_name');";
 
 
 
