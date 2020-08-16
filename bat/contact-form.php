@@ -5,11 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "capaladb";
 $myConnection= mysqli_connect("$servername","$username","$password","$dbname") or die ("could not connect to mysql"); 
-upload_files("video_pitch");
-upload_files("product_demo");
-upload_files("logo");
-upload_files("prod_image");
-upload_files("pitch_deck");
+
 $startup_name=$_POST['startup_name'];
 $description_of_solution=$_POST['description_of_solution'];
 $tagline=$_POST['_tagline'];
@@ -50,10 +46,75 @@ INSERT INTO uploadStartUpform
 
 mysqli_query($myConnection,$query) or die('Error, query failed');
 
+upload_files("video_pitch");
+upload_files("product_demo");
+ upload_files("logo");
+ upload_files("prod_image");
+ upload_files("pitch_deck");
+
+function updateTable($file,$name){
+   global $startup_name; 
+   global $myConnection;  
+   switch ($file) {
+    case "logo":
+      $columnName="logoPath";
+      break;
+    case "prod_image":
+      $columnName="productImagePath";
+      break;
+    case "video_pitch":
+      $columnName="videoPitchPath";
+      break;
+      case "pitch_deck":
+        $columnName="pitchDeckPath";
+        break;
+        case "product_demo":
+          $columnName="productDemoPath";
+          break;
+      
+    
+  };
 
 
+  $sql = 'UPDATE uploadStartUpform
+  SET '.$columnName.'="'.$name.'"
+  WHERE startupName="'.$startup_name.'";';
+  
+  mysqli_query($myConnection,$sql) or die('Error, query failed');
+}
 
+function image_upload($file,$fileextension,$tmp_name,$name){
+  if (($fileextension !== "png") && ($fileextension !== "jpg"))
+  {
+  echo "The file extension must be .mp4, .ogg, or .webm in order to be uploaded";
+  }
+  
+  
+  else if (($fileextension == "png")  || ($fileextension == "jpg"))
+  {
+  if (move_uploaded_file($tmp_name,$name)) {
+  
+  updateTable($file,$name);
+ 
+  }
+  }
+  }
 
+  function video_upload($file,$fileextension,$tmp_name,$name){
+    if (($fileextension !== "mp4") && ($fileextension !== "ogg") && ($fileextension !== "webm"))
+    {
+    echo "The file extension must be .mp4, .ogg, or .webm in order to be uploaded";
+    }
+    
+    
+    else if (($fileextension == "mp4")  || ($fileextension == "ogg") || ($fileextension == "webm"))
+    {
+    if (move_uploaded_file($tmp_name, $name)) {
+    
+  updateTable($file,$name);
+    }
+    }
+    }
 function upload_files($file) {
     $name= $_FILES[$file]['name'];
 
@@ -64,6 +125,8 @@ $position= strpos($name, ".");
 $fileextension= substr($name, $position + 1);
 
 $fileextension= strtolower($fileextension);
+
+
 if (isset($name)&& !empty($name)) {
 
     $path= 'Uploads/';
@@ -72,22 +135,21 @@ if (isset($name)&& !empty($name)) {
     echo "Please choose a file";
     }
     else if (!empty($name)){
-    if (($fileextension !== "mp4") && ($fileextension !== "ogg")&& ($fileextension !== "png") && ($fileextension !== "webm"))
-    {
-    echo "The file extension must be .mp4, .ogg, or .webm in order to be uploaded";
+      echo "logo";
+    if(($file=="logo")||($file=="prod_image")){
+     
+      image_upload($file,$fileextension,$tmp_name,$path.$name);
     }
-    
-    
-    else if (($fileextension == "mp4")  || ($fileextension == "ogg") || ($fileextension == "webm")|| ($fileextension == "png"))
-    {
-    if (move_uploaded_file($tmp_name, $path.$name)) {
-    echo 'Uploaded!';
-    }
-    }
+    else if (($file=="video_pitch")||($file=="product_demo")||($name=="pitch_deck")){
+      video_upload($file,$fileextension,$tmp_name,$path.$name);
     }
     }
 
   }
+  
+ 
+  }
+ 
 
 
 ?>

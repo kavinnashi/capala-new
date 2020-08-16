@@ -15,6 +15,7 @@
   <link rel="stylesheet/less" href="css/form.less">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/file-upload-style.css">
+  <link rel="stylesheet" href="css/range-slide.css">
   <style>
     .ie-panel {
       display: none;
@@ -287,15 +288,19 @@
             <label>Accelerator web link</label>
             <input class="form-control  " name="accelerator_link" placeholder="Accelerator web link" type="text">
           </div>
-          <div class="form-group">
+          
+          <div class="form-group"> 
             <label>Last invsetment value</label>
-            <select class="form-control  " name="last_investment" placeholder="Name">
+            <div class="rangeslider-wrap">
+              <input type="range" name="last_investment" value="0" min="1" max="7" step="1" labels="<1000, 10000, 70000, 1800000, 1900000, 2000000, >2100000">
+            </div>
+            <!-- <select class="form-control  " name="last_investment" placeholder="Name">
               <option value="first">First</option>
               <option value="second">Second</option>
               <option value="third">Third</option>
-            </select>
+            </select> -->
           </div>
-          <div class="form-group">
+          <div class="form-group" style="margin-top: 50px;">
             <label>Last investment by</label>
             <input class="form-control  " name="last_investment_by" placeholder="Last investment by" type="text">
           </div>
@@ -309,19 +314,26 @@
           </div>
           <div class="form-group">
             <label>Current stage of investment</label>
-            <select class="form-control  " name="investment_stage" placeholder="Name" >
+            <div class="rangeslider-wrap">
+              <input type="range" name="investment_stage" value="0" min="1" max="4" step="1" labels="Seed, 
+              Pre Series A, Series A, Series B">
+            </div>
+            <!-- <select class="form-control  " name="investment_stage" placeholder="Name" >
               <option value="first">First</option>
               <option value="second">Second</option>
               <option value="third">Third</option>
-            </select>
+            </select> -->
           </div>
-          <div class="form-group">
+          <div class="form-group" style="margin-bottom: 50px;margin-top: 50px;">
             <label>How much do you intend to raise now</label>
-            <select class="form-control  " name="fund_raise" placeholder="Name" >
+            <div class="rangeslider-wrap">
+              <input type="range" name="fund_raise" value="1" min="1" max="7" step="1" labels="<1000, 10000, 70000, 1800000, 1900000, 2000000, >2100000">
+            </div>
+            <!-- <select class="form-control  " name="fund_raise" placeholder="Name" >
               <option value="first">First</option>
               <option value="second">Second</option>
               <option value="third">Third</option>
-            </select>
+            </select> -->
           </div>
         </div>
 
@@ -373,6 +385,8 @@
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/file-upload-script.js"></script>
+  <script src="js/range-slider-core.js"></script>
+  <script src="js/range-slide.js"></script>
   <script src="js/contact-js.js"></script>
   
 </body>
