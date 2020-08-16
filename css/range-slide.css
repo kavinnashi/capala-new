@@ -55,9 +55,9 @@
     border-top: 10px solid;
     border-top-color: #0099FF;
   }
-  /* .rangeslider__handle__value:after {
-    content: " cm";
-  } */
+  .rangeslider__handle__value:after {
+    content: " K";
+  }
   .rangeslider__fill {
     position: absolute;
     top: 0;

@@ -292,7 +292,7 @@
           <div class="form-group"> 
             <label>Last invsetment value</label>
             <div class="rangeslider-wrap">
-              <input type="range" name="last_investment" value="0" min="1" max="7" step="1" labels="<1000, 10000, 70000, 1800000, 1900000, 2000000, >2100000">
+              <input type="range" name="last_investment" min="150" max="210" step="0.1" labels="150k, 160k, 170k, 180k, 190k, 200k, 210k">
             </div>
             <!-- <select class="form-control  " name="last_investment" placeholder="Name">
               <option value="first">First</option>
@@ -314,20 +314,19 @@
           </div>
           <div class="form-group">
             <label>Current stage of investment</label>
-            <div class="rangeslider-wrap">
-              <input type="range" name="investment_stage" value="0" min="1" max="4" step="1" labels="Seed, 
-              Pre Series A, Series A, Series B">
-            </div>
-            <!-- <select class="form-control  " name="investment_stage" placeholder="Name" >
-              <option value="first">First</option>
-              <option value="second">Second</option>
-              <option value="third">Third</option>
-            </select> -->
+            
+            <select class="form-control  " name="investment_stage" placeholder="Name" >
+              <option value="Seed">Seed</option>
+              <option value="Pre Series A">Pre Series A</option>
+              <option value="Series A">Series A</option>
+              <option value="Series B">Series B</option>
+            </select>
           </div>
-          <div class="form-group" style="margin-bottom: 50px;margin-top: 50px;">
+          <div class="form-group" style="margin-bottom: 50px;">
             <label>How much do you intend to raise now</label>
             <div class="rangeslider-wrap">
-              <input type="range" name="fund_raise" value="1" min="1" max="7" step="1" labels="<1000, 10000, 70000, 1800000, 1900000, 2000000, >2100000">
+              <input type="range" name="fund_raise" min="150" max="210" step="0.1" labels="150k, 160k, 170k, 180k, 190k, 200k, 210k">
+            
             </div>
             <!-- <select class="form-control  " name="fund_raise" placeholder="Name" >
               <option value="first">First</option>
