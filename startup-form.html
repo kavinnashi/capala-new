@@ -74,7 +74,7 @@
     }
   </style>
 
-  
+
 </head>
 
 <body>
@@ -99,7 +99,7 @@
     </div>
   </div>
   <div class="page"></div>
-  
+
   <div id="startup" class="modal">
 
     <!-- Modal content -->
@@ -107,273 +107,314 @@
       <span class="close">&times;</span>
       <form id="regForm" method="post" action="bat/contact-form.php" enctype="multipart/form-data">
 
-        
-        
-          <div class="startup">
-        <!-- One "tab" for each step in the form: -->
-        <h1 class="model-h1 ">Startup signup form</h1>
-        <div class="tab "><h4>Start up info:</h4>
-          <div class="form-group">
-            <label>Start Up Name</label>
-            <input class="form-control  " name="startup_name" placeholder="Start Up Name" type="text">
-          </div>
 
 
-          <div class="form-group">
-            <label>Description of the solution</label>
-            <textarea name="description_of_solution" placeholder="Description of the solution"
-              style="width:100%; height:200px;" class=" "></textarea>
-          </div>
+        <div class="startup">
+          <!-- One "tab" for each step in the form: -->
+          <h1 class="model-h1 ">Startup signup form</h1>
+          <div class="tab ">
+            <h4>Start up info:</h4>
+            <div class="form-group">
+              <label>Start Up Name</label>
+              <input class="form-control  " name="startup_name" placeholder="Start Up Name" type="text">
+            </div>
 
-          <div class="form-group">
-            <label>One Line Tagline</label>
-            <input class="form-control  " name="_tagline" placeholder="One Line Tagline" type="text">
-          </div>
-          
 
-          <div class="form-group">
-            <label>Video Pitch of the startup</label>
-            <div class="file-upload">
-              <div class="file-select">
-                <div class="file-select-button" id="fileName">Choose File</div>
-                <div class="file-select-name" id="noFile">No file chosen...</div> 
-                <input type="file" name="video_pitch" id="video_pitch">
+            <div class="form-group">
+              <label>Description of the solution</label>
+              <textarea name="description_of_solution" placeholder="Description of the solution"
+                style="width:100%; height:200px;" class=" "></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>One Line Tagline</label>
+              <input class="form-control  " name="_tagline" placeholder="One Line Tagline" type="text">
+            </div>
+
+
+            <div class="form-group">
+              <label>Video Pitch of the startup</label>
+              <div class="file-upload">
+                <div class="file-select">
+                  <div class="file-select-button" id="fileName">Choose File</div>
+                  <div class="file-select-name" id="noFile">No file chosen...</div>
+                  <input type="file" name="video_pitch" id="video_pitch">
+                </div>
+              </div>
+
+
+            </div>
+            <div class="form-group">
+              <label>Product demo video</label>
+
+              <div class="file-upload">
+                <div class="file-select">
+                  <div class="file-select-button" id="fileName">Choose File</div>
+                  <div class="file-select-name" id="noFile">No file chosen...</div>
+                  <input type="file" name="product_demo" id="product_demo">
+                </div>
               </div>
             </div>
-          
-           
-          </div>
-          <div class="form-group">
-            <label>Product demo video</label>
-            
-            <div class="file-upload">
-              <div class="file-select">
-                <div class="file-select-button" id="fileName">Choose File</div>
-                <div class="file-select-name" id="noFile">No file chosen...</div> 
-                <input type="file" name="product_demo" id="product_demo">
+            <div class="form-group">
+              <label>Logo of the Startup</label>
+
+              <div class="file-upload">
+                <div class="file-select">
+                  <div class="file-select-button" id="fileName">Choose File</div>
+                  <div class="file-select-name" id="noFile">No file chosen...</div>
+                  <input type="file" name="logo" id="logo">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label>Logo of the Startup</label>
-            
-            <div class="file-upload">
-              <div class="file-select">
-                <div class="file-select-button" id="fileName">Choose File</div>
-                <div class="file-select-name" id="noFile">No file chosen...</div> 
-                <input type="file" name="logo" id="logo">
+            <div class="form-group">
+              <label>Product Image</label>
+
+              <div class="file-upload">
+                <div class="file-select">
+                  <div class="file-select-button" id="fileName">Choose File</div>
+                  <div class="file-select-name" id="noFile">No file chosen...</div>
+                  <input type="file" name="prod_image" id="prod_image">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label>Product Image</label>
-          
-            <div class="file-upload">
-              <div class="file-select">
-                <div class="file-select-button" id="fileName">Choose File</div>
-                <div class="file-select-name" id="noFile">No file chosen...</div> 
-                <input type="file" name="prod_image" id="prod_image">
+            <div class="form-group">
+              <label>Pitch deck</label>
+
+              <div class="file-upload">
+                <div class="file-select">
+                  <div class="file-select-button" id="fileName">Choose File</div>
+                  <div class="file-select-name" id="noFile">No file chosen...</div>
+                  <input type="file" name="pitch_deck" id="pitch_deck">
+                </div>
               </div>
             </div>
+            <div class="form-group">
+              <label>Sector</label>
+              <select class="form-control  " name="sector" placeholder="Name" type="text">
+                <option value="Agricultural">Agricultural</option>
+                <option value="Food & Beverage">Food & Beverage</option>
+                <option value="Automotive">Automotive</option>
+                <option value="Capital Goods">Capital Goods</option>
+                <option value="Toys, Recreational & Sport Products">Toys, Recreational & Sport Products</option>
+                <option value="Aerospace & Defense">Aerospace & Defense</option>
+                <option value="Education">Education</option>
+                <option value="Packaging">Packaging</option>
+                <option value="Energy">Energy</option>
+                <option value="Construction & Engineering">Construction & Engineering</option>
+                <option value="Pharmaceuticals & Medical Research">Pharmaceuticals & Medical Research</option>
+                <option value="Financial">Financial</option>
+                <option value="Public management">Public management</option>
+                <option value="Transportation & Logistics">Transportation & Logistics</option>
+                <option value="Mining & Metals">Mining & Metals</option>
+                <option value="Paper & Forest Products">Paper & Forest Products</option>
+                <option value="Consumer Products">Consumer Products</option>
+                <option value="Media & Publishing">Media & Publishing</option>
+                <option value="Chemicals">Chemicals</option>
+                <option value="Healthcare Services">Healthcare Services</option>
+                <option value="Software and IT Services">Software and IT Services</option>
+                <option value="Telecommunications Services">Telecommunications Services</option>
+                <option value="Professional & Commercial Services">Professional & Commercial Services</option>
+                <option value="Information Technology - Hardware">Information Technology - Hardware</option>
+                <option value="Textile">Textile</option>
+                <option value="Tourism & Entertainment Services">Tourism & Entertainment Services</option>
+                <option value="Utilities (Electric, Gas, Water, Sewage)">Utilities (Electric, Gas, Water, Sewage)
+                </option>
+                <option value="Retail, Trade & Distributing Services">Retail, Trade & Distributing Services</option>
+              </select>
+            </div>
           </div>
-          <div class="form-group">
-            <label>Pitch deck</label>
-           
-            <div class="file-upload">
-              <div class="file-select">
-                <div class="file-select-button" id="fileName">Choose File</div>
-                <div class="file-select-name" id="noFile">No file chosen...</div> 
-                <input type="file" name="pitch_deck" id="pitch_deck">
+
+          <div class="tab ">
+            <h4>About Founder:</h4>
+            <div class="form-group">
+              <label>Name of the Founder</label>
+              <input class="form-control  " name="founder" placeholder="Name of the Founder" type="text">
+            </div>
+            <div class="form-group">
+              <label>Linkedin Page link</label>
+              <input class="form-control  " name="linked_in_link" placeholder="Linkedin Page link" type="text">
+            </div>
+            <div class="form-group">
+              <label>Age group</label>
+              <select class="form-control  " name="age" placeholder="Name">
+                <option value="18-24">18-24</option>
+                <option value="25-30">25-30</option>
+                <option value="31-35">31-35</option>
+          <option value="36-40">36-40</option>
+          <option value="31-35">31-35</option>
+          <option value="41-50">41-50</option>
+          <option value="51-60">51-60</option>
+          <option value="61+">61+</option>
+                <option value="I don't want to declare">I don't want to declare</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Gender</label>
+              <select class="form-control  " name="gender" placeholder="Name">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+          <option value="I don't want to declare">I don't want to declare</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Email id</label>
+              <input class="form-control  " name="contact_email" placeholder="Email id" type="email">
+            </div>
+
+
+            <div class="form-group">
+              <label>Mobile number</label>
+              <input class="form-control  " name="contact_number" placeholder="Mobile number" type="text">
+            </div>
+
+            <div class="form-group">
+              <label>Years of experience</label>
+              <select class="form-control  " name="experience" placeholder="Name">
+                <option value="first">First</option>
+                <option value="second">Second</option>
+                <option value="third">Third</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Qualification</label>
+              <input class="form-control  " name="qualification" placeholder="Qualification" type="text">
+            </div>
+
+
+          </div>
+
+          <div class="tab ">
+            <h4>About startup:</h4>
+            <div class="form-group">
+              <label>What is the current stage of the startup</label>
+              <select class="form-control  " name="current_stage" placeholder="Name">
+                <option value="Idea / Project / Nothing built">Idea / Project / Nothing built</option>
+              <option value="Prototype / MVP / Bench / Proof of Concept / Patent">Prototype / MVP / Bench / Proof of Concept / Patent</option>
+              <option value="Users / Pilot Test / Beta Test / Completed regulatory approval">Users / Pilot Test / Beta Test / Completed regulatory approval</option>
+			        <option value="Paying customers / Launched on the market">Paying customers / Launched on the market</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>When was the startup founded</label>
+              <input class="form-control  " name="startup_date" placeholder="When was the startup founded" type="text">
+            </div>
+            <div class="form-group">
+              <label>Employee strength</label>
+              <input class="form-control  " name="emp_strength" placeholder="Employee strength" type="text">
+            </div>
+            <div class="form-group">
+              <label>Have you been part of accelerator/ incubator program</label>
+              <select class="form-control  " name="program" placeholder="Name">
+                <option value="first">First</option>
+                <option value="second">Second</option>
+                <option value="third">Third</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Name of accelerator</label>
+              <select class="form-control  " name="accelerator" placeholder="Name">
+                <option value="first">First</option>
+                <option value="second">Second</option>
+                <option value="third">Third</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Accelerator web link</label>
+              <input class="form-control  " name="accelerator_link" placeholder="Accelerator web link" type="text">
+            </div>
+
+            <div class="form-group">
+              <label>Last invsetment value</label>
+              <div class="rangeslider-wrap">
+                <input type="range" name="last_investment" min="150" max="210" step="0.1"
+                  labels="150k, 160k, 170k, 180k, 190k, 200k, 210k">
               </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Sector</label>
-            <select class="form-control  " name="sector" placeholder="Name" type="text">
-              <option value="first">First</option>
-              <option value="second">Second</option>
-              <option value="third">Third</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="tab "><h4>About Founder:</h4>
-          <div class="form-group">
-            <label>Name of the Founder</label>
-            <input class="form-control  " name="founder" placeholder="Name of the Founder" type="text">
-          </div>
-          <div class="form-group">
-            <label>Linkedin Page link</label>
-            <input class="form-control  " name="linked_in_link" placeholder="Linkedin Page link" type="text">
-          </div>
-          <div class="form-group">
-            <label>Age group</label>
-            <select class="form-control  " name="age" placeholder="Name" >
-              <option value="first">First</option>
-              <option value="second">Second</option>
-              <option value="third">Third</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Gender</label>
-            <select class="form-control  " name="gender" placeholder="Name" >
-              <option value="first">First</option>
-              <option value="second">Second</option>
-              <option value="third">Third</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Email id</label>
-            <input class="form-control  " name="contact_email" placeholder="Email id" type="email">
-          </div>
-
-
-          <div class="form-group">
-            <label>Mobile number</label>
-            <input class="form-control  " name="contact_number" placeholder="Mobile number" type="text">
-          </div>
-
-          <div class="form-group">
-            <label>Years of experience</label>
-            <select class="form-control  " name="experience" placeholder="Name" >
-              <option value="first">First</option>
-              <option value="second">Second</option>
-              <option value="third">Third</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Qualification</label>
-            <input class="form-control  " name="qualification" placeholder="Qualification" type="text">
-          </div>
-
-
-        </div>
-
-        <div class="tab "><h4>About startup:</h4>
-          <div class="form-group">
-            <label>What is the current stage of the startup</label>
-            <select class="form-control  " name="current_stage" placeholder="Name" >
-              <option value="first">First</option>
-              <option value="second">Second</option>
-              <option value="third">Third</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>When was the startup founded</label>
-            <input class="form-control  " name="startup_date" placeholder="When was the startup founded" type="text">
-          </div>
-          <div class="form-group">
-            <label>Employee strength</label>
-            <input class="form-control  " name="emp_strength" placeholder="Employee strength" type="text">
-          </div>
-          <div class="form-group">
-            <label>Have you been part of accelerator/ incubator program</label>
-            <select class="form-control  " name="program" placeholder="Name" >
-              <option value="first">First</option>
-              <option value="second">Second</option>
-              <option value="third">Third</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Name of accelerator</label>
-            <select class="form-control  " name="accelerator" placeholder="Name" >
-              <option value="first">First</option>
-              <option value="second">Second</option>
-              <option value="third">Third</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Accelerator web link</label>
-            <input class="form-control  " name="accelerator_link" placeholder="Accelerator web link" type="text">
-          </div>
-          
-          <div class="form-group"> 
-            <label>Last invsetment value</label>
-            <div class="rangeslider-wrap">
-              <input type="range" name="last_investment" min="150" max="210" step="0.1" labels="150k, 160k, 170k, 180k, 190k, 200k, 210k">
-            </div>
-            <!-- <select class="form-control  " name="last_investment" placeholder="Name">
+              <!-- <select class="form-control  " name="last_investment" placeholder="Name">
               <option value="first">First</option>
               <option value="second">Second</option>
               <option value="third">Third</option>
             </select> -->
-          </div>
-          <div class="form-group" style="margin-top: 50px;">
-            <label>Last investment by</label>
-            <input class="form-control  " name="last_investment_by" placeholder="Last investment by" type="text">
-          </div>
-          <div class="form-group">
-            <label>Date of last investment</label>
-            <input class="form-control  " name="last_investment_date" placeholder="Date of last investment" type="text">
-          </div>
-          <div class="form-group">
-            <label>Name of Investing firm</label>
-            <input class="form-control  " name="investment_firm" placeholder="Name of Investing firm" type="text">
-          </div>
-          <div class="form-group">
-            <label>Current stage of investment</label>
-            
-            <select class="form-control  " name="investment_stage" placeholder="Name" >
-              <option value="Seed">Seed</option>
-              <option value="Pre Series A">Pre Series A</option>
-              <option value="Series A">Series A</option>
-              <option value="Series B">Series B</option>
-            </select>
-          </div>
-          <div class="form-group" style="margin-bottom: 50px;">
-            <label>How much do you intend to raise now</label>
-            <div class="rangeslider-wrap">
-              <input type="range" name="fund_raise" min="150" max="210" step="0.1" labels="150k, 160k, 170k, 180k, 190k, 200k, 210k">
-            
             </div>
-            <!-- <select class="form-control  " name="fund_raise" placeholder="Name" >
+            <div class="form-group" style="margin-top: 50px;">
+              <label>Last investment by</label>
+              <input class="form-control  " name="last_investment_by" placeholder="Last investment by" type="text">
+            </div>
+            <div class="form-group">
+              <label>Date of last investment</label>
+              <input class="form-control  " name="last_investment_date" placeholder="Date of last investment"
+                type="text">
+            </div>
+            <div class="form-group">
+              <label>Name of Investing firm</label>
+              <input class="form-control  " name="investment_firm" placeholder="Name of Investing firm" type="text">
+            </div>
+            <div class="form-group">
+              <label>Current stage of investment</label>
+
+              <select class="form-control  " name="investment_stage" placeholder="Name">
+                <option value="Seed">Seed</option>
+                <option value="Pre Series A">Pre Series A</option>
+                <option value="Series A">Series A</option>
+                <option value="Series B">Series B</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 50px;">
+              <label>How much do you intend to raise now</label>
+              <div class="rangeslider-wrap">
+                <input type="range" name="fund_raise" min="150" max="210" step="0.1"
+                  labels="150k, 160k, 170k, 180k, 190k, 200k, 210k">
+
+              </div>
+              <!-- <select class="form-control  " name="fund_raise" placeholder="Name" >
               <option value="first">First</option>
               <option value="second">Second</option>
               <option value="third">Third</option>
             </select> -->
+            </div>
+          </div>
+
+          <div class="tab ">
+            <h4>Startup Links:</h4>
+            <div class="form-group">
+              <label>Website ID</label>
+              <input class="form-control  " name="website_link" placeholder="Website ID" type="text">
+            </div>
+            <div class="form-group">
+              <label>Linkedin</label>
+              <input class="form-control  " name="linkedin_link" placeholder="Linkedin" type="text">
+            </div>
+            <div class="form-group">
+              <label>Facebook</label>
+              <input class="form-control  " name="fb_link" placeholder="Facebook" type="text">
+            </div>
+            <div class="form-group">
+              <label>Twitter</label>
+              <input class="form-control  " name="twitter_link" placeholder="Twitter" type="text">
+            </div>
+            <div class="form-group">
+              <label>Instagram</label>
+              <input class="form-control  " name="insta_link" placeholder="Instagram" type="text">
+            </div>
+          </div>
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step startup-step"></span>
+            <span class="step startup-step"></span>
+            <span class="step startup-step"></span>
+            <span class="step startup-step"></span>
           </div>
         </div>
 
-        <div class="tab "><h4>Startup Links:</h4>
-          <div class="form-group">
-            <label>Website ID</label>
-            <input class="form-control  " name="website_link" placeholder="Website ID" type="text">
-          </div>
-          <div class="form-group">
-            <label>Linkedin</label>
-            <input class="form-control  " name="linkedin_link" placeholder="Linkedin" type="text">
-          </div>
-          <div class="form-group">
-            <label>Facebook</label>
-            <input class="form-control  " name="fb_link" placeholder="Facebook" type="text">
-          </div>
-          <div class="form-group">
-            <label>Twitter</label>
-            <input class="form-control  " name="twitter_link" placeholder="Twitter" type="text">
-          </div>
-          <div class="form-group">
-            <label>Instagram</label>
-            <input class="form-control  " name="insta_link" placeholder="Instagram" type="text">
-          </div>
-        </div>
-        <div style="overflow:auto;">
-          <div style="float:right;">
-            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-          </div>
-        </div>
-
-        <!-- Circles which indicates the steps of the form: -->
-        <div style="text-align:center;margin-top:40px;">
-          <span class="step startup-step"></span>
-          <span class="step startup-step"></span>
-          <span class="step startup-step"></span>
-          <span class="step startup-step"></span>
-        </div>
-      </div>
-     
 
       </form>
 
@@ -387,7 +428,7 @@
   <script src="js/range-slider-core.js"></script>
   <script src="js/range-slide.js"></script>
   <script src="js/contact-js.js"></script>
-  
+
 </body>
 
 </html>
