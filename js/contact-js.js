@@ -76,7 +76,7 @@ function nextPrev(n) {
   if (currentTab >= x.length) {
     //...the form gets submitted:
    // document.getElementById("regForm").submit();
-   $("#regForm").submit();
+   //$("#regForm").submit();
    //submit();
   
     goBack();
