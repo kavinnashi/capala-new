@@ -5,7 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "capaladb";
 $myConnection= mysqli_connect("$servername","$username","$password","$dbname") or die ("could not connect to mysql"); 
-
+upload_files("video_pitch");
 $startup_name=$_POST['startup_name'];
 $description_of_solution=$_POST['description_of_solution'];
 $tagline=$_POST['_tagline'];
