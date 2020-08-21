@@ -72,7 +72,7 @@
     }
   </style>
 
-  
+
 </head>
 
 <body>
@@ -97,7 +97,7 @@
     </div>
   </div>
   <div class="page"></div>
-  
+
   <div id="startup" class="modal">
 
     <!-- Modal content -->
@@ -105,76 +105,89 @@
       <span class="close">&times;</span>
       <form id="regForm" method="post" action="bat/contact-form-investor.php" enctype="multipart/form-data">
 
-        
+
         <div class="invest">
-        <h1 class="model-h1 ">Investor signup form:</h1>
+          <h1 class="model-h1 ">Investor signup form:</h1>
 
-        <div class="tab "><h4>Investor info:</h4>
-          <div class="form-group">
-            <label>First Name</label>
-            <input class="form-control  " name="inv_first_name" placeholder="First Name" type="text">
-          </div>
-          <div class="form-group">
-            <label>Last name</label>
-            <input class="form-control  " name="inv_last_name" placeholder="Last name" type="text">
-          </div>
-          <div class="form-group">
-            <label>Company Name</label>
-            <input class="form-control  " name="inv_company_name" placeholder="Company Name" type="text">
-          </div>
-          <div class="form-group">
-            <label>Job title</label>
-            <input class="form-control  " name="inv_job_title" placeholder="Job title" type="text">
-          </div>
-          <div class="form-group">
-            <label>Investor type</label>
-            <select class="form-control  " name="inv_investor_type" placeholder="Name" >
-              <option value="first">First</option>
-              <option value="second">Second</option>
-              <option value="third">Third</option>
-            </select>
-          </div>
-         
+          <div class="tab ">
+            <h4>Investor info:</h4>
+            <div class="form-group">
+              <label>First Name</label>
+              <input class="form-control  " name="inv_first_name" placeholder="First Name" type="text">
+            </div>
+            <div class="form-group">
+              <label>Last name</label>
+              <input class="form-control  " name="inv_last_name" placeholder="Last name" type="text">
+            </div>
+            <div class="form-group">
+              <label>Company Name</label>
+              <input class="form-control  " name="inv_company_name" placeholder="Company Name" type="text">
+            </div>
+            <div class="form-group">
+              <label>Job title</label>
+              <select class="form-control  " name="inv_job_title" placeholder="Job title" type="text">
+                <option value="Founder">Founder</option>
+                <option value="CEO">CEO</option>
+                <option value="CFO">CFO</option>
+                <option value="CTO">CTO</option>
+                <option value="Anlyst">Anlyst</option>
+                <option value="Partner">Partner</option>
+                <option value="Portfolio Manager">Portfolio Manager</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Investor type</label>
+              <select class="form-control  " name="inv_investor_type" placeholder="Name">
+                <option value="Angel">Angel</option>
+                <option value="VC">VC</option>
+                <option value="HNI">HNI</option>
+                <option value="Family Office">Family Office</option>
+                <option value="Accelerator">Accelerator</option>
+              </select>
+            </div>
 
 
-          <div class="form-group">
-            <label>Mobile number</label>
-            <input class="form-control  " name="inv_mobile_number" placeholder="Investor number" type="text">
-          </div>
-          <div class="form-group">
-            <label>Email id</label>
-            <input class="form-control  " name="inv_email_id" placeholder="Investor email" type="email">
-          </div>
+
+            <div class="form-group">
+              <label>Mobile number</label>
+              <input class="form-control  " name="inv_mobile_number" placeholder="Investor number" type="text">
+            </div>
+            <div class="form-group">
+              <label>Email id</label>
+              <input class="form-control  " name="inv_email_id" placeholder="Investor email" type="email">
+            </div>
 
 
-          <div class="form-group">
-            <label>Website</label>
-            <input class="form-control  " name="inv_website" placeholder="Website" type="text">
+            <div class="form-group">
+              <label>Website</label>
+              <input class="form-control  " name="inv_website" placeholder="Website" type="text">
+            </div>
+
+            <div class="form-group">
+              <label>City</label>
+              <input class="form-control  " name="inv_city" placeholder="City" type="text">
+            </div>
+
+            <div class="form-group">
+              <label>Pincode</label>
+              <input class="form-control  " name="inv_pincode" placeholder="Pincode" type="text">
+            </div>
+
+            <div class="form-group">
+              <label>Linkedin Id</label>
+              <input class="form-control  " name="inv_linkedin" placeholder="Linkedin Id" type="text">
+            </div>
           </div>
 
-          <div class="form-group">
-            <label>City</label>
-            <input class="form-control  " name="inv_city" placeholder="City" type="text">
-          </div>
-
-          <div class="form-group">
-            <label>Pincode</label>
-            <input class="form-control  " name="inv_pincode" placeholder="Pincode" type="text">
-          </div>
-
-          <div class="form-group">
-            <label>Linkedin Id</label>
-            <input class="form-control  " name="inv_linkedin" placeholder="Linkedin Id" type="text">
-          </div>
-          </div>
-          
-          <div class="tab "><h4>Preferences:</h4>
+          <div class="tab ">
+            <h4>Preferences:</h4>
             <div class="form-group">
               <label>Funding Stage</label>
               <select class="form-control  " name="inv_funding_stage" placeholder="Funding Stage" type="text">
-                <option value="first">First</option>
-                <option value="second">Second</option>
-                <option value="third">Third</option>
+                <option value="Pre Seed">Pre Seed</option>
+                <option value="Seed">Seed</option>
+                <option value="Series A">Series A</option>
               </select>
             </div>
             <div class="form-group">
@@ -188,36 +201,63 @@
             <div class="form-group">
               <label>Product Stage</label>
               <select class="form-control  " name="inv_product_stage" placeholder="Name" >
-                <option value="first">First</option>
-                <option value="second">Second</option>
-                <option value="third">Third</option>
+                <option value="Ideation,">Ideation,</option>
+                <option value="Prototype,">Prototype,</option>
+                <option value="Pre Revenue,">Pre Revenue,</option>
+				        <option value="Revenue Generation">Revenue Generation</option>
               </select>
             </div>
             <div class="form-group">
               <label>Sector</label>
-              <select class="form-control  " name="inv_sector" placeholder="Name" >
-                <option value="first">First</option>
-                <option value="second">Second</option>
-                <option value="third">Third</option>
+              <select class="form-control" name="inv_sector" placeholder="Name">
+                <option value="Agricultural">Agricultural</option>
+                <option value="Food & Beverage">Food & Beverage</option>
+                <option value="Automotive">Automotive</option>
+                <option value="Capital Goods">Capital Goods</option>
+                <option value="Toys, Recreational & Sport Products">Toys, Recreational & Sport Products</option>
+                <option value="Aerospace & Defense">Aerospace & Defense</option>
+                <option value="Education">Education</option>
+                <option value="Packaging">Packaging</option>
+                <option value="Energy">Energy</option>
+                <option value="Construction & Engineering">Construction & Engineering</option>
+                <option value="Pharmaceuticals & Medical Research">Pharmaceuticals & Medical Research</option>
+                <option value="Financial">Financial</option>
+                <option value="Public management">Public management</option>
+                <option value="Transportation & Logistics">Transportation & Logistics</option>
+                <option value="Mining & Metals">Mining & Metals</option>
+                <option value="Paper & Forest Products">Paper & Forest Products</option>
+                <option value="Consumer Products">Consumer Products</option>
+                <option value="Media & Publishing">Media & Publishing</option>
+                <option value="Chemicals">Chemicals</option>
+                <option value="Healthcare Services">Healthcare Services</option>
+                <option value="Software and IT Services">Software and IT Services</option>
+                <option value="Telecommunications Services">Telecommunications Services</option>
+                <option value="Professional & Commercial Services">Professional & Commercial Services</option>
+                <option value="Information Technology - Hardware">Information Technology - Hardware</option>
+                <option value="Textile">Textile</option>
+                <option value="Tourism & Entertainment Services">Tourism & Entertainment Services</option>
+                <option value="Utilities (Electric, Gas, Water, Sewage)">Utilities (Electric, Gas, Water, Sewage)
+                </option>
+                <option value="Retail, Trade & Distributing Services">Retail, Trade & Distributing Services</option>
               </select>
             </div>
-            </div>
-            <div style="overflow:auto;">
-              <div style="float:right;">
-                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-              </div>
-            </div>
-    
-            <!-- Circles which indicates the steps of the form: -->
-            <div style="text-align:center;margin-top:40px;">
-              <span class="step"></span>
-              <span class="step"></span>
-              
+          </div>
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
             </div>
           </div>
-          
-     
+
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+
+          </div>
+        </div>
+
+
 
       </form>
 
@@ -228,10 +268,10 @@
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-    
+
   </script>
   <script src="js/contact-js.js"></script>
-  
+
 </body>
 
 </html>
