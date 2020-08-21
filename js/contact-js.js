@@ -1,3 +1,16 @@
+function programChange(){
+  $(".accelator-section").toggle();
+}
+
+
+
+
+
+
+
+
+
+
 // Get the modal
 var modal = document.getElementById("startup");
 

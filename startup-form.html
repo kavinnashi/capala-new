@@ -240,11 +240,11 @@
                 <option value="18-24">18-24</option>
                 <option value="25-30">25-30</option>
                 <option value="31-35">31-35</option>
-          <option value="36-40">36-40</option>
-          <option value="31-35">31-35</option>
-          <option value="41-50">41-50</option>
-          <option value="51-60">51-60</option>
-          <option value="61+">61+</option>
+                <option value="36-40">36-40</option>
+                <option value="31-35">31-35</option>
+                <option value="41-50">41-50</option>
+                <option value="51-60">51-60</option>
+                <option value="61+">61+</option>
                 <option value="I don't want to declare">I don't want to declare</option>
               </select>
             </div>
@@ -254,7 +254,7 @@
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
-          <option value="I don't want to declare">I don't want to declare</option>
+                <option value="I don't want to declare">I don't want to declare</option>
               </select>
             </div>
 
@@ -291,10 +291,20 @@
             <div class="form-group">
               <label>What is the current stage of the startup</label>
               <select class="form-control  " name="current_stage" placeholder="Name">
-                <option value="Idea / Project / Nothing built">Idea / Project / Nothing built</option>
-              <option value="Prototype / MVP / Bench / Proof of Concept / Patent">Prototype / MVP / Bench / Proof of Concept / Patent</option>
-              <option value="Users / Pilot Test / Beta Test / Completed regulatory approval">Users / Pilot Test / Beta Test / Completed regulatory approval</option>
-			        <option value="Paying customers / Launched on the market">Paying customers / Launched on the market</option>
+                <option value="Idea">Idea</option>
+                <option value="Project">Project</option>
+                <option value="Nothing built">Nothing built</option>
+                <option value="Prototype">Prototype</option>
+                <option value="MVP">MVP</option>
+                <option value="Bench">Bench</option>
+                <option value="Proof of Concept ">Proof of Concept </option>
+                <option value="Patent">Patent</option>
+                <option value="User">User</option>
+                <option value="Pilot Test">Pilot Test</option>
+                <option value="Beta Test">Beta Test</option>
+                <option value="Completed regulatory approval">Completed regulatory approval</option>
+                <option value="Paying customers">Paying customers</option>
+                <option value="Launched on the market">Launched on the market</option>
               </select>
             </div>
             <div class="form-group">
@@ -307,24 +317,25 @@
             </div>
             <div class="form-group">
               <label>Have you been part of accelerator/ incubator program</label>
-              <select class="form-control  " name="program" placeholder="Name">
-                <option value="first">First</option>
-                <option value="second">Second</option>
-                <option value="third">Third</option>
+              <select class="form-control" name="program" placeholder="Name" onchange="programChange()">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                
+               
+              
               </select>
             </div>
+            <div class="accelator-section">
             <div class="form-group">
               <label>Name of accelerator</label>
-              <select class="form-control  " name="accelerator" placeholder="Name">
-                <option value="first">First</option>
-                <option value="second">Second</option>
-                <option value="third">Third</option>
-              </select>
+              <input class="form-control" name="accelerator" placeholder="Name" type="text" />
+               
             </div>
             <div class="form-group">
               <label>Accelerator web link</label>
               <input class="form-control  " name="accelerator_link" placeholder="Accelerator web link" type="text">
             </div>
+          </div>
 
             <div class="form-group">
               <label>Last invsetment value</label>
